@@ -29,7 +29,7 @@ const AboutSection = () => {
               <div className="tactical-line" />
               <div className="flex items-center justify-between">
                 <span className="font-display text-xs tracking-[0.2em] text-muted-foreground uppercase">Focus</span>
-                <span className="font-display text-sm text-foreground">Full-Stack & AI/ML</span>
+                <span className="font-display text-sm text-foreground">ML Engineer</span>
               </div>
               <div className="tactical-line" />
               <div className="flex items-center justify-between">

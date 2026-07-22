@@ -47,7 +47,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="opacity-0 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-          <p className="section-label mb-6">Full-Stack Developer</p>
+          <p className="section-label mb-6">ML Engineer</p>
         </div>
 
         <h1
@@ -63,7 +63,7 @@ const HeroSection = () => {
           className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-body leading-relaxed opacity-0 animate-fade-in-up"
           style={{ animationDelay: "0.5s" }}
         >
-          Worked on different kinds of domains from the likes of Healthcare, Fintech and Tourism.
+          Worked on different kinds of domains from the likes of Healthcare, Fintech and Deep Learning.
         </p>
 
         <div

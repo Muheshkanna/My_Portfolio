@@ -1,7 +1,7 @@
 const skillClusters = [
   {
     position: "Prolific",
-    skills: ["Python", "Full-Stack Development", "Problem Solving"],
+    skills: ["Python", "Machine Learning", "Deep Learning"],
     description: "Core technical arsenal — the creative engine driving solutions forward.",
   },
   {

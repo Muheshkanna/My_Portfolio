@@ -1,6 +1,6 @@
 import argosImage from "@/assets/argos-project.png";
 import forestFireImage from "@/assets/forest-fire-project.png";
-import jharkhandTourismImage from "@/assets/jharkhand-tourism.png";
+import del1Image from "@/assets/DEL1.png";
 import stockPredictorImage from "@/assets/stock-predictor.png";
 
 const projects = [
@@ -12,6 +12,7 @@ const projects = [
       "Privacy-preserving data synthesis across distributed nodes. A federated learning system that enables clinical institutions to collaboratively train models without exposing sensitive patient data.",
     tags: ["Federated Learning", "Privacy", "Clinical AI", "Python"],
     image: argosImage,
+    link: "https://github.com/Muheshkanna/Argos--Federated-Clinical-Intelligence",
   },
   {
     id: "forest-fire",
@@ -21,15 +22,17 @@ const projects = [
       "Real-time spatial analysis and early-warning deployment. An intelligent monitoring system that leverages satellite imagery and sensor data for rapid fire detection and response coordination.",
     tags: ["Computer Vision", "Real-time", "Environmental", "ML"],
     image: forestFireImage,
+    link: "https://github.com/Muheshkanna/Forest_Fire-Detection",
   },
   {
-    id: "jharkhand",
+    id: "Ensemble lab",
     label: "TACTICAL SOLUTION 03",
-    title: "Jharkhand Tourism Application",
+    title: "Ensemble lab",
     description:
-      "End-to-end tourism platform showcasing the natural beauty and cultural heritage of Jharkhand. Built with full-stack technologies for seamless user experience and content management.",
-    tags: ["Full-Stack", "Tourism", "UI/UX", "React"],
-    image: jharkhandTourismImage,
+      "AI reliability platform that uses five independently trained neural networks for robust image classification with confidence and uncertainty estimation.",
+    tags: ["ML", "Deep Learning", "PyTorch", "React"],
+    image: del1Image,
+    link: "https://github.com/Muheshkanna/Deep-Ensemble-Learning",
   },
   {
     id: "Stock Predictor",
@@ -39,6 +42,7 @@ const projects = [
       "AI-powered financial analytics platform with authentication, machine learning predictions, AI insights, and modern dashboards that demonstrates advanced skills in machine learning, fintech analytics.",
     tags: ["Deep Learning", "Computer Vision", "Accessibility", "Python"],
     image: stockPredictorImage,
+    link: "https://github.com/Muheshkanna/AI-Powered-Stock-Price-Predictor",
   },
 ];
 
@@ -78,7 +82,18 @@ const ProjectsSection = () => {
                     {project.label}
                   </p>
                   <h3 className="font-display text-xl md:text-2xl font-bold tracking-tight text-foreground mb-4">
-                    {project.title}
+                    {project.link ? (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-primary transition-colors cursor-pointer"
+                      >
+                        {project.title}
+                      </a>
+                    ) : (
+                      project.title
+                    )}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed mb-6">
                     {project.description}

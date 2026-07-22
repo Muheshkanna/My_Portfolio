@@ -13,6 +13,7 @@ const Navbar = () => {
     { label: "About", href: "#about" },
     { label: "Projects", href: "#projects" },
     { label: "Skills", href: "#skills" },
+    { label: "Experience", href: "#experience" },
     { label: "Education", href: "#education" },
     { label: "Contact", href: "#contact" },
   ];
@@ -24,12 +25,12 @@ const Navbar = () => {
           : "bg-transparent"
         }`}
     >
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
         <a href="#" className="font-display text-sm font-bold tracking-wider text-primary">
           <span className="text-foreground">Portfolio</span>
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-4 lg:gap-8">
           {links.map((link) => (
             <a
               key={link.label}

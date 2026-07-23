@@ -6,6 +6,52 @@
 
 @layer base {
   :root {
+    --background: 0 0% 100%;
+    --foreground: 210 20% 4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 4%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 4%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 10% 90%;
+    --secondary-foreground: 210 20% 4%;
+
+    --muted: 210 10% 95%;
+    --muted-foreground: 210 10% 40%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 10% 90%;
+    --input: 210 10% 90%;
+    --ring: 0 0% 0%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 210 20% 4%;
+    --sidebar-primary: 0 0% 0%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 10% 90%;
+    --sidebar-accent-foreground: 210 20% 4%;
+    --sidebar-border: 210 10% 90%;
+    --sidebar-ring: 0 0% 0%;
+
+    /* Custom tokens */
+    --glow-primary: 0 0% 0%;
+    --glow-accent: 217 91% 60%;
+    --surface-elevated: 210 10% 96%;
+  }
+
+  .dark {
     --background: 210 20% 4%;
     --foreground: 0 0% 98%;
 
@@ -73,8 +119,8 @@
 
   .tactical-grid {
     background-image:
-      linear-gradient(to right, hsl(142 70% 45% / 0.04) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(142 70% 45% / 0.04) 1px, transparent 1px);
+      linear-gradient(to right, hsl(var(--primary) / 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--primary) / 0.04) 1px, transparent 1px);
     background-size: 40px 40px;
   }
 

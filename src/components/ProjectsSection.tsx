@@ -1,6 +1,6 @@
 import argosImage from "@/assets/argos-project.png";
 import forestFireImage from "@/assets/forest-fire-project.png";
-import jharkhandTourismImage from "@/assets/jharkhand-tourism.png";
+import ensembleLabImage from "@/assets/DEL1.png";
 import stockPredictorImage from "@/assets/stock-predictor.png";
 
 const projects = [
@@ -12,6 +12,7 @@ const projects = [
       "Privacy-preserving data synthesis across distributed nodes. A federated learning system that enables clinical institutions to collaboratively train models without exposing sensitive patient data.",
     tags: ["Federated Learning", "Privacy", "Clinical AI", "Python"],
     image: argosImage,
+    link: "https://github.com/Muheshkanna/Argos--Federated-Clinical-Intelligence", // Assuming default link, but can be adjusted
   },
   {
     id: "forest-fire",
@@ -21,6 +22,7 @@ const projects = [
       "Real-time spatial analysis and early-warning deployment. An intelligent monitoring system that leverages satellite imagery and sensor data for rapid fire detection and response coordination.",
     tags: ["Computer Vision", "Real-time", "Environmental", "ML"],
     image: forestFireImage,
+    link: "https://github.com/Muheshkanna/Forest_Fire-Detection",
   },
   {
     id: "Ensemble lab",
@@ -29,7 +31,8 @@ const projects = [
     description:
       "AI reliability platform that uses five independently trained neural networks for robust image classification with confidence and uncertainty estimation.",
     tags: ["ML", "Deep Learning", "PyTorch", "React"],
-    image: jharkhandTourismImage,
+    image: ensembleLabImage,
+    link: "https://github.com/Muheshkanna/Deep-Ensemble-Learning",
   },
   {
     id: "Stock Predictor",
@@ -39,6 +42,7 @@ const projects = [
       "AI-powered financial analytics platform with authentication, machine learning predictions, AI insights, and modern dashboards that demonstrates advanced skills in machine learning, fintech analytics.",
     tags: ["Deep Learning", "Computer Vision", "Accessibility", "Python"],
     image: stockPredictorImage,
+    link: "https://github.com/Muheshkanna/AI-Powered-Stock-Price-Predictor",
   },
 ];
 
@@ -55,9 +59,12 @@ const ProjectsSection = () => {
 
         <div className="grid gap-8">
           {projects.map((project, index) => (
-            <div
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
               key={project.id}
-              className="card-tactical p-2 opacity-0 animate-fade-in-up"
+              className="card-tactical p-2 opacity-0 animate-fade-in-up block cursor-pointer no-underline"
               style={{ animationDelay: `${0.2 + index * 0.15}s` }}
             >
               <div className="grid md:grid-cols-2 gap-0">
@@ -95,7 +102,7 @@ const ProjectsSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

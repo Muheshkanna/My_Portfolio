@@ -10,10 +10,10 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="opacity-0 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             <p className="text-foreground/80 text-lg leading-relaxed">
-              Results-driven developer skilled in Python and full-stack technologies, with hands-on experience delivering multiple end-to-end projects.
+              Results-driven developer skilled in Machine Learning, with hands-on experience delivering multiple end-to-end projects.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Known for strong logical reasoning, effective leadership, and a creative mindset. Also an active writer currently developing a book series — because seeing the whole field means telling stories that matter.
+              Known for strong logical reasoning, effective leadership, and a creative mindset.
             </p>
           </div>
 

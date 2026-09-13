@@ -42,7 +42,7 @@ const projects = [
       "AI-powered financial analytics platform with authentication, machine learning predictions, AI insights, and modern dashboards that demonstrates advanced skills in machine learning, fintech analytics.",
     tags: ["Deep Learning", "Computer Vision", "Accessibility", "Python"],
     image: stockPredictorImage,
-    link: "https://github.com/Muheshkanna/AI-Powered-Stock-Price-Predictor",
+    link: "http://insight-ai-stocks.vercel.app/",
   },
 ];
 
